@@ -8,7 +8,7 @@ $curl = curl_init();
 
 curl_setopt_array($curl, array(
   
-  CURLOPT_URL =>  $urlAPIWompi . "API/validate-token.php",
+  CURLOPT_URL =>  $urlAPI. "API/validate-token.php",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,

@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     { //se validan que los parámetros no vayan vacíos
         
         
-        $sql = "SELECT token FROM gx_register WHERE Mail_REG = ? "; // SQL with parameters
+        $sql = "SELECT token FROM users WHERE email = ? "; // SQL with parameters
         $stmt = $link->prepare($sql); 
         $stmt->bind_param("s",  $_POST['email']);
         $stmt->execute();
